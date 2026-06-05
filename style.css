@@ -1,0 +1,59 @@
+body{
+    margin:0;
+    background:#08121f;
+    color:white;
+    font-family:Arial,sans-serif;
+}
+
+nav{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:20px;
+    background:#0d1828;
+}
+
+.logo{
+    font-size:30px;
+    font-weight:bold;
+    color:#ffd34d;
+}
+
+#search{
+    width:300px;
+    padding:10px;
+    border:none;
+    border-radius:8px;
+}
+
+.container{
+    max-width:1200px;
+    margin:auto;
+    padding:20px;
+}
+
+.player{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    background:#0d1828;
+    padding:15px;
+    margin-bottom:10px;
+    border-radius:10px;
+}
+
+.rank{
+    width:60px;
+    font-weight:bold;
+}
+
+.name{
+    flex:1;
+}
+
+.tier{
+    background:#ffb300;
+    color:black;
+    padding:5px 10px;
+    border-radius:6px;
+}
