@@ -1,59 +1,124 @@
-body{
-    margin:0;
-    background:#08121f;
-    color:white;
-    font-family:Arial,sans-serif;
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Segoe UI, sans-serif;
 }
 
-nav{
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
-    padding:20px;
-    background:#0d1828;
+body{
+background:#07111f;
+color:white;
+}
+
+.navbar{
+height:80px;
+background:#0d1828;
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:0 30px;
+border-bottom:1px solid #162847;
 }
 
 .logo{
-    font-size:30px;
-    font-weight:bold;
-    color:#ffd34d;
+font-size:38px;
+font-weight:800;
+color:#ffd34d;
 }
 
-#search{
-    width:300px;
-    padding:10px;
-    border:none;
-    border-radius:8px;
+.search{
+width:320px;
+padding:12px;
+border:none;
+border-radius:10px;
+background:white;
 }
 
 .container{
-    max-width:1200px;
-    margin:auto;
-    padding:20px;
+max-width:1300px;
+margin:auto;
+padding:25px;
+}
+
+.tabs{
+display:flex;
+gap:12px;
+overflow-x:auto;
+padding-bottom:20px;
+}
+
+.tabs::-webkit-scrollbar{
+display:none;
+}
+
+.tab{
+background:#0d1828;
+color:white;
+border:1px solid #203759;
+padding:15px 18px;
+border-radius:14px;
+cursor:pointer;
+font-weight:700;
+white-space:nowrap;
+}
+
+.tab:hover{
+background:#152947;
+}
+
+.active{
+border:2px solid gold;
+}
+
+.title{
+margin-bottom:25px;
+font-size:42px;
 }
 
 .player{
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
-    background:#0d1828;
-    padding:15px;
-    margin-bottom:10px;
-    border-radius:10px;
+display:flex;
+justify-content:space-between;
+align-items:center;
+background:#0d1828;
+padding:18px;
+border-radius:12px;
+margin-bottom:8px;
+}
+
+.player:hover{
+background:#142746;
 }
 
 .rank{
-    width:60px;
-    font-weight:bold;
+font-size:22px;
+font-weight:bold;
+width:90px;
 }
 
 .name{
-    flex:1;
+flex:1;
+font-size:18px;
 }
 
 .tier{
-    background:#ffb300;
-    color:black;
-    padding:5px 10px;
-    border-radius:6px;
+background:#f1b90b;
+color:black;
+font-weight:bold;
+padding:8px 14px;
+border-radius:10px;
+}
+
+.empty{
+opacity:.40;
+}
+
+.empty .tier{
+background:#444;
+color:white;
+}
+
+#leaderboard{
+display:flex;
+flex-direction:column;
+gap:8px;
 }
